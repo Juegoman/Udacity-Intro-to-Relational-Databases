@@ -1,0 +1,5 @@
+/vagrant/.vagrant
+/vagrant/catalog
+*.pyc
+vagrantfile
+pg_config.sh
