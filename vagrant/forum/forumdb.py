@@ -46,6 +46,6 @@ def AddPost(content):
     bleached_content = bleach.clean(content)
     db = psycopg2.connect("dbname=forum")
     cursor = db.cursor()
-    cursor.execute("insert into posts values (%s)", (str(bleached_content,)))
+    cursor.execute("insert into posts values (%s)", (str(bleached_content),))
     db.commit()
     db.close()
